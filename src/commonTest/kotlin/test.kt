@@ -5,13 +5,14 @@ import com.soywiz.korge.tween.*
 import com.soywiz.korge.view.*
 import com.soywiz.korim.color.*
 import com.soywiz.korma.geom.*
+import julien.*
 import kotlin.test.*
 
 class MyTest : ViewsForTesting() {
 	@Test
 	fun test() = viewsTest {
 		val log = arrayListOf<String>()
-		val rect = solidRect(100, 100, Colors.RED)
+		val rect = solidRect(100, 100, BlockColor.RED)
 		rect.onClick {
 			log += "clicked"
 		}
