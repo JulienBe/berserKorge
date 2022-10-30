@@ -60,7 +60,7 @@ suspend fun main() = Korge(width = 480, height = 640, bgcolor = Colors["#2b2b2b"
         }
     }
     // UI ON TOP
-    val bgLogo = roundRect(cellSize.toDouble(), cellSize.toDouble(), 5.0, fill = Colors["#edc403"]) {
+    val bgLogo = roundRect(cellSize.toDouble(), cellSize.toDouble(), 5.0, fill = Colors["#ff1600"]) {
         position(leftIndent, 5.0)
     }
 
@@ -73,7 +73,7 @@ suspend fun main() = Korge(width = 480, height = 640, bgcolor = Colors["#2b2b2b"
         alignTopToTopOf(bgBest)
     }
 
-    text("Emrys\nGame", cellSize * 0.35, Colors["#090a0b"], font).centerOn(bgLogo)
+    text("Emrys\nparty", cellSize * 0.35, Colors["#090a0b"], font).centerOn(bgLogo)
     text("BEST", cellSize * 0.25, RGBA(239, 226, 210), font) {
         centerXOn(bgBest)
         alignTopToTopOf(bgBest, 5.0)
